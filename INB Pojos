@@ -1,0 +1,45 @@
+pojos for INB Project
+
+customer_AccOpenEntry - Name, Mobile Number, Email ID, Aadhar Card Number, Date of Birth, fathersName, residance add......
+
+customer - 
+
+customer_accountnumber 
+
+customer_address
+
+customer_username
+
+customer_transactional password
+
+customer_userlogindetails
+
+customer_login_password
+
+customer_payeedetails
+
+customer_transaction
+
+admin_username
+
+admin_password
+
+
+
+admin_username to customer_AccOpenentry - OneToMany
+
+customer to customer_accountnumber - OneToMany
+
+customer to customer_address - OneToMany
+
+customer to customer_username - OneToOne
+
+customer_username to customer_loginpassword - OneToOne
+
+customer_username to customer_transactionalpassowrd - OneToOne
+
+customer_username to customer_payeedetails - OneToMany
+
+customer_username to customer_userlogindetails - OneToMany
+
+customer_account to customerTransaction - OneToMany
